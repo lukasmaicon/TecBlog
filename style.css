@@ -1,0 +1,312 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #dbd6d6;
+}
+
+header {
+  background-color: #fcbd4a;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+span {
+  color: white;
+}
+
+.nav-bar li {
+  list-style: none;
+  padding: 25px;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.index {
+  background: white;
+  width: 850px;
+  margin: auto;
+  margin-top: 20px;
+  clear: both;
+}
+
+h4 {
+  padding: 10px 15px;
+  font-size: 20px;
+  color: #fcbd4a;
+}
+
+.index-conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-conteudo img {
+  width: 99%;
+  height: 520px;
+  padding: 10px;
+}
+
+.index p {
+  padding: 0px 15px;
+}
+
+.index ul li {
+  margin: 35px;
+}
+
+.principal {
+  width: 920px;
+  margin: 0 auto;
+}
+
+.postagens {
+  background: white;
+  width: 660px;
+  float: left;
+  margin-top: 20px;
+}
+
+.conteudo-postagens h2 {
+  color: #fcbd4a;
+  width: 220px;
+  margin: 10px 10px;
+}
+
+.conteudo-postagens p {
+  display: block;
+  text-align: center;
+  text-align: justify;
+  padding: 15px;
+}
+
+.conteudo-postagens img {
+  padding: 0px 10px;
+}
+
+.lateral {
+  background: white;
+  width: 240px;
+  float: right;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.lateral-conteudo {
+  margin-top: 5px;
+}
+
+.lateral h3 {
+  background: #0000008c;
+  padding: 4px;
+}
+
+.lateral a {
+  text-decoration: none;
+  color: #fcbd4a;
+}
+
+.lateral a:hover {
+  color: white;
+  background-color: #fcbd4a;
+}
+
+.lateral li {
+  list-style-type: none;
+  margin-top: 5px;
+}
+
+.lateral li a {
+  font-size: 17px;
+}
+
+.index-eletronicos {
+  background: white;
+  width: 920px;
+  margin: auto;
+  clear: both;
+  position: relative;
+  top: 20px;
+}
+
+h4 {
+  padding: 10px 15px;
+  font-size: 20px;
+  color: #fcbd4a;
+}
+
+.index-eletronicos-conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-eletronicos-conteudo img {
+  width: 99%;
+  height: 520px;
+  padding: 10px;
+}
+
+.index-eletronicos p {
+  padding: 0px 15px;
+}
+
+.index-eletronicos ul li {
+  margin: 35px;
+}
+
+.footer {
+  padding: 20px;
+  width: 100%;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  clear: both;
+}
+
+@media screen and (max-width: 730px) {
+  .nav-bar {
+    z-index: 0px;
+  }
+
+  .logo {
+    padding-right: 60%;
+  }
+
+  .nav-bar li {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    bottom: 36px;
+    left: 85%;
+  }
+
+  .mobile-menu li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .mobile-menu li a {
+    display: block;
+  }
+
+  .open {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .index-eletronicos {
+    width: 100%;
+  }
+
+  .index-eletronicos-conteudo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .index p {
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .index {
+    width: 100%;
+  }
+
+  .index-conteudo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .index p {
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 945px) {
+  .principal {
+    width: 100%;
+  }
+
+  .postagens-lateral {
+    width: 100%;
+    float: none;
+  }
+
+  .lateral {
+    width: 100%;
+  }
+
+  .lateral img {
+    width: 50%;
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 687px) {
+  .principal {
+    margin: 0 auto;
+  }
+
+  .postagens {
+    width: 100%;
+  }
+
+  .conteudo-postagens img {
+    margin: auto;
+    width: 100%;
+  }
+
+  .conteudo-postagens p {
+    width: 100%;
+  }
+}
