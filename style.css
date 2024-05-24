@@ -189,13 +189,70 @@ h4 {
   margin: 35px;
 }
 
+.contato {
+  width: 620px;
+  background: white;
+  margin: auto;
+  margin-top: 20px;
+}
+
+h2 {
+  color: black;
+  font-size: 31px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+h3 {
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.icone {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.icone a {
+  text-decoration: none;
+  color: #fcbd4a;
+  font-size: 55px;
+}
+
+.icone a:hover {
+  color: black;
+}
+
+.perfil {
+  margin: auto;
+  text-align: center;
+}
+
+.perfil img {
+  width: auto;
+  height: 250px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.6);
+  transition: all 0.8s ease-in-out;
+}
+
+.perfil img:hover {
+  transform: scale(1.1);
+}
+
 .footer {
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 17vh;
   width: 100%;
   color: black;
   font-weight: bold;
   text-align: center;
-  clear: both;
 }
 
 @media screen and (max-width: 730px) {
@@ -308,5 +365,21 @@ h4 {
 
   .conteudo-postagens p {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 608px) {
+  .contato {
+    max-width: 100%;
+  }
+
+  .icone a {
+    font-size: 60px;
+  }
+
+  .perfil img {
+    width: 60%;
+    height: auto;
+    margin-top: 20px;
   }
 }
